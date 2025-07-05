@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000; 
+
 
 let posts = []; // In-memory post storage
 
@@ -49,7 +49,7 @@ app.post('/delete/:id', (req, res) => {
   res.redirect('/');
 });
 
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });    
