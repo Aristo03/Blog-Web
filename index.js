@@ -50,6 +50,8 @@ app.post('/delete/:id', (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});    
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
+
+  
